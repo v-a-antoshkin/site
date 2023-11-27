@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 nav > ul {
     list-style: none;
     width: 100%;
@@ -33,4 +37,75 @@ nav a {
     width: 50px;
     height: 50px;
 }
+
+.section-1 {
+    height: 600px;
+    background-image: url(/images/bgs1-bottom.svg), url(/images/bgs1-top.svg);
+    background-repeat: no-repeat;
+    background-position: bottom, top right;
+    background-size: 100%, 50%;
+}
+
+.section-1 .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section-1 .layout-1,
+.section-1 .layout-2
+{
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.section-1 .layout-1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .layout-1 img {
+    width: 60%;
+    height: 70%;
+    transform: rotate(-20deg);
+}
+
+.section-1 .layout-2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .layout-2 h1 {
+    background-color: #f7cf00;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
+
+footer img {
+    width: 150px;
+    height: 150px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+footer p {
+    color: #f7cf00;
+    font-size: 1.5em;
+}
+
+
 
